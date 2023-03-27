@@ -1,0 +1,83 @@
+loaded rc file /opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/uwgeo-data/uwgeodynamicsrc
+	Global element size: 50x50
+	Local offset of rank 0: 0x0
+	Local range of rank 0: 25x25
+In func WeightsCalculator_CalculateAll(): for swarm "UWA3I5PW__swarm"
+	done 33% (209 cells)...
+	done 67% (417 cells)...
+	done 100% (625 cells)...
+WeightsCalculator_CalculateAll(): finished update of weights for swarm "UWA3I5PW__swarm"
+	Global element size: 50x50
+	Local offset of rank 0: 0x0
+	Local range of rank 0: 25x25
+Assertion failed in file ../../../../src/mpi/romio/adio/ad_cray/ad_cray_adio_open.c at line 520: liblustreapi != NULL
+/opt/cray/pe/mpich/default/ofi/gnu/9.1/lib-abi-mpich/libmpi.so.12(MPL_backtrace_show+0x26) [0x1495bf441c4b]
+/opt/cray/pe/mpich/default/ofi/gnu/9.1/lib-abi-mpich/libmpi.so.12(+0x1ff3684) [0x1495bedf3684]
+/opt/cray/pe/mpich/default/ofi/gnu/9.1/lib-abi-mpich/libmpi.so.12(+0x2672775) [0x1495bf472775]
+/opt/cray/pe/mpich/default/ofi/gnu/9.1/lib-abi-mpich/libmpi.so.12(+0x26ae1c1) [0x1495bf4ae1c1]
+/opt/cray/pe/mpich/default/ofi/gnu/9.1/lib-abi-mpich/libmpi.so.12(MPI_File_open+0x205) [0x1495bf453625]
+/usr/local/lib/libhdf5.so.103(+0x32753f) [0x1495bfef853f]
+/usr/local/lib/libhdf5.so.103(H5FD_open+0x164) [0x1495bfcf77e4]
+/usr/local/lib/libhdf5.so.103(H5F_open+0x4a4) [0x1495bfce51b4]
+/usr/local/lib/libhdf5.so.103(H5Fcreate+0xd9) [0x1495bfcd6f59]
+/opt/venv/lib/python3.10/site-packages/h5py/defs.cpython-310-x86_64-linux-gnu.so(+0x30c02) [0x1495c46c1c02]
+/opt/venv/lib/python3.10/site-packages/h5py/h5f.cpython-310-x86_64-linux-gnu.so(+0x1037f) [0x1495c348c37f]
+python3(+0x15bb5e) [0x55c59aee0b5e]
+/opt/venv/lib/python3.10/site-packages/h5py/_objects.cpython-310-x86_64-linux-gnu.so(+0xc13b) [0x1495c42c713b]
+python3(_PyObject_MakeTpCall+0x25b) [0x55c59aed77db]
+python3(_PyEval_EvalFrameDefault+0x74dc) [0x55c59aed0e1c]
+python3(_PyFunction_Vectorcall+0x7c) [0x55c59aee13ac]
+python3(_PyEval_EvalFrameDefault+0x19bc) [0x55c59aecb2fc]
+python3(_PyFunction_Vectorcall+0x7c) [0x55c59aee13ac]
+python3(_PyObject_FastCallDictTstate+0x16d) [0x55c59aed6a0d]
+python3(+0x166594) [0x55c59aeeb594]
+python3(+0x152b8b) [0x55c59aed7b8b]
+python3(PyObject_Call+0xbb) [0x55c59aeeffcb]
+python3(_PyEval_EvalFrameDefault+0x2a70) [0x55c59aecc3b0]
+python3(+0x16a5f1) [0x55c59aeef5f1]
+python3(_PyEval_EvalFrameDefault+0x26af) [0x55c59aecbfef]
+python3(+0x16a391) [0x55c59aeef391]
+python3(_PyEval_EvalFrameDefault+0x19bc) [0x55c59aecb2fc]
+python3(_PyFunction_Vectorcall+0x7c) [0x55c59aee13ac]
+python3(_PyEval_EvalFrameDefault+0x80a) [0x55c59aeca14a]
+python3(_PyFunction_Vectorcall+0x7c) [0x55c59aee13ac]
+python3(_PyEval_EvalFrameDefault+0x80a) [0x55c59aeca14a]
+python3(_PyObject_FastCallDictTstate+0xc4) [0x55c59aed6964]
+MPICH ERROR [Rank 0] [job id 1091833.0] [Sat Mar 25 12:30:33 2023] [nid001285] - Abort(1): Internal error
+
+srun: error: nid001285: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1091833.0
+slurmstepd: error: *** STEP 1091833.0 ON nid001285 CANCELLED AT 2023-03-25T12:30:33 ***
+[1]PETSC ERROR: ------------------------------------------------------------------------
+[1]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[1]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[1]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[1]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[1]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 1] [job id 1091833.0] [Sat Mar 25 12:30:34 2023] [nid001285] - Abort(59) (rank 1 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 1
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 1
+srun: error: nid001285: task 1: Exited with exit code 15
+[2]PETSC ERROR: ------------------------------------------------------------------------
+[2]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[2]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[2]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[2]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[2]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 2] [job id 1091833.0] [Sat Mar 25 12:30:35 2023] [nid001285] - Abort(59) (rank 2 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 2
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 2
+srun: error: nid001285: task 2: Exited with exit code 15
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[3]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[3]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[3]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[3]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 3] [job id 1091833.0] [Sat Mar 25 12:30:36 2023] [nid001285] - Abort(59) (rank 3 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 3
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 3
+srun: error: nid001285: task 3: Exited with exit code 15

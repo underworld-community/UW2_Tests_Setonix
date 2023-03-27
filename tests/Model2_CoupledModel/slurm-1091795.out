@@ -1,0 +1,92 @@
+loaded rc file /opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/uwgeo-data/uwgeodynamicsrc
+	Global element size: 192x64
+	Local offset of rank 0: 0x0
+	Local range of rank 0: 48x64
+In func WeightsCalculator_CalculateAll(): for swarm "Z8PYG9XQ__swarm"
+	done 33% (1024 cells)...
+	done 67% (2048 cells)...
+	done 100% (3072 cells)...
+WeightsCalculator_CalculateAll(): finished update of weights for swarm "Z8PYG9XQ__swarm"
+In SystemLinearEquations_NonLinearExecute
+
+Non linear solver - iteration 0
+Linear solver (LZ9QPXEK__system-execute) 
+Linear solver (LZ9QPXEK__system-execute), solution time 2.664929e-02 (secs)
+Non linear solver - iteration 1
+Linear solver (LZ9QPXEK__system-execute) 
+Linear solver (LZ9QPXEK__system-execute), solution time 6.931580e-03 (secs)
+In func SystemLinearEquations_NonLinearExecute: Iteration 1 of 500 - Residual 0.0017793 - Tolerance = 0.01
+Non linear solver - Residual 1.77926875e-03; Tolerance 1.0000e-02 - Converged - 6.911162e-02 (secs)
+
+In func SystemLinearEquations_NonLinearExecute: Converged after 1 iterations.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-_ob3v869 because the default path (/home/nl3963/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-rre6vg5q because the default path (/home/nl3963/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-g3ecb2vn because the default path (/home/nl3963/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ntz1oiye because the default path (/home/nl3963/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+An uncaught exception was encountered on processor 0.
+Traceback (most recent call last):
+  File "/work/UW_SETONIX_TESTcm_Tutorial11.py", line 206, in <module>
+    Model.surfaceProcesses = GEO.surfaceProcesses.Badlands(airIndex=[stickyAir.index, air.index], sedimentIndex=sediment.index,
+  File "/opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 541, in surfaceProcesses
+    self._surfaceProcesses.Model = self
+  File "/opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/surfaceProcesses.py", line 37, in Model
+    self._init_model()
+  File "/opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/surfaceProcesses.py", line 121, in _init_model
+    self.dem = self._generate_dem()
+  File "/opt/venv/lib/python3.10/site-packages/underworld/UWGeodynamics/surfaceProcesses.py", line 164, in _generate_dem
+    nx = np.int((self.maxCoord[0] - self.minCoord[0]) / self.resolution)
+  File "/opt/venv/lib/python3.10/site-packages/numpy/__init__.py", line 305, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'inf'?
+MPICH ERROR [Rank 0] [job id 1091795.0] [Sat Mar 25 12:20:07 2023] [nid001080] - Abort(1) (rank 0 in comm 496): application called MPI_Abort(comm=0x84000002, 1) - process 0
+
+[0]PETSC ERROR: ------------------------------------------------------------------------
+[0]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[0]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[0]PETSC ERROR: to get more information on the crash.
+[0]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
+MPICH ERROR [Rank 0] [job id 1091795.0] [Sat Mar 25 12:20:07 2023] [nid001080] - Abort(59) (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 0
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 0
+srun: error: nid001080: task 0: Exited with exit code 15
+srun: launch/slurm: _step_signal: Terminating StepId=1091795.0
+slurmstepd: error: *** STEP 1091795.0 ON nid001080 CANCELLED AT 2023-03-25T12:20:08 ***
+[1]PETSC ERROR: ------------------------------------------------------------------------
+[1]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[1]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[1]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[1]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[1]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 1] [job id 1091795.0] [Sat Mar 25 12:20:09 2023] [nid001080] - Abort(59) (rank 1 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 1
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 1
+srun: error: nid001080: task 1: Exited with exit code 15
+[2]PETSC ERROR: ------------------------------------------------------------------------
+[2]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[2]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[2]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[2]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[2]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 2] [job id 1091795.0] [Sat Mar 25 12:20:10 2023] [nid001080] - Abort(59) (rank 2 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 2
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 2
+srun: error: nid001080: task 2: Exited with exit code 15
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[3]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[3]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[3]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[3]PETSC ERROR: to get more information on the crash.
+MPICH ERROR [Rank 3] [job id 1091795.0] [Sat Mar 25 12:20:11 2023] [nid001080] - Abort(59) (rank 3 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 3
+
+aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 59) - process 3
+srun: error: nid001080: task 3: Exited with exit code 15
