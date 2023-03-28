@@ -7,23 +7,13 @@
 #SBATCH --time=01:00:00
 #SBATCH --export=none
  
-# load Singularity
-module load singularity/3.8.6
- 
-# Define the container to use
-export pawseyRepository=/scratch/pawsey0407/jgiordani/myimages/
 
-export containerImage=$pawseyRepository/underworld2-mpich_latest.sif
+module load python/3.9.15 py-mpi4py/3.1.2-py3.9.15 py-numpy/1.20.3 py-h5py/3.4.0 py-cython/0.29.24
+export OPT_DIR=/software/projects/pawsey0407/setonix/
+source $OPT_DIR/py39/bin/activate
+PYTHONPATH=/software/projects/pawsey0407/setonix/underworld/2.14.2/lib/python3.9/site-packages/:$PYTHONPATH
+
 export model="test_FreeSurface_Kaus2010_RTI.py"
 
-# ## uncomment for the setonix pure h5py test ##
-# export containerImage=$pawseyRepository/hpc-python_2022.03-hdf5mpi.sif
-# export model="parallel_write.py"
-
-# as per
-# https://support.pawsey.org.au/documentation/pages/viewpage.action?pageId=116131367#UsewithSingularity-RunningPythonandR
-# we unset all the host python-related ENV vars
-unset $( env | grep ^PYTHON | cut -d = -f 1 | xargs )
-
 # execute
-srun --export=all -u -n $SLURM_NTASKS singularity exec -B ${PWD}:/work $containerImage bash -c "cd /work/; python3 $model"
+srun -n $SLURM_NTASKS python3 $model
