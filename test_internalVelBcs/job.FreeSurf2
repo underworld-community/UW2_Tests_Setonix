@@ -1,0 +1,317 @@
+Loading underworld/2.13.0
+  Loading requirement: python/3.10.4 petsc/3.17.1_openmpi libxml/2.9.12
+No protocol specified
+[34]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[34]PETSC ERROR: Argument out of range
+[34]PETSC ERROR: New nonzero at (0,0) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[34]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[34]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[34]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[34]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[34]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[34]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[35]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[35]PETSC ERROR: Argument out of range
+[35]PETSC ERROR: New nonzero at (20,20) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[35]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[35]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[35]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[35]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[35]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[35]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[35]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[35]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[35]PETSC ERROR: [28]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[28]PETSC ERROR: Argument out of range
+[28]PETSC ERROR: New nonzero at (36,36) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[28]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[28]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[28]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[28]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[28]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[28]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[28]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[28]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[28]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[28]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[28]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[28]PETSC ERROR: [32]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[32]PETSC ERROR: Argument out of range
+[32]PETSC ERROR: New nonzero at (78,78) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[32]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[32]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[32]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[32]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[32]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[32]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[32]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[32]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[32]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[32]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[32]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[32]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[33]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[33]PETSC ERROR: Argument out of range
+[33]PETSC ERROR: New nonzero at (180,180) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[33]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[33]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[33]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[33]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[33]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[33]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[33]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[33]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[33]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[33]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[33]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[33]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[29]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[29]PETSC ERROR: Argument out of range
+[29]PETSC ERROR: New nonzero at (136,136) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[29]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[29]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[29]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[29]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[29]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[29]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[29]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[29]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[29]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[29]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[29]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[29]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[29]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[31]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[31]PETSC ERROR: Argument out of range
+[31]PETSC ERROR: New nonzero at (0,0) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[31]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[31]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[31]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[31]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[31]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[31]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[31]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[31]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[31]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[31]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[31]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[31]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[31]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[31]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[30]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[30]PETSC ERROR: Argument out of range
+[30]PETSC ERROR: New nonzero at (238,238) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[30]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[30]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[30]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[30]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[30]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[30]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[30]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[30]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[30]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[30]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[30]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[30]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[30]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[30]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[30]PETSC ERROR: [27]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[27]PETSC ERROR: Argument out of range
+[27]PETSC ERROR: New nonzero at (296,296) caused a malloc
+Use MatSetOption(A, MAT_NEW_NONZERO_ALLOCATION_ERR, PETSC_FALSE) to turn off this check
+[27]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[27]PETSC ERROR: Petsc Release Version 3.17.1, Apr 28, 2022 
+[27]PETSC ERROR: FreeSurf.py on a  named node08 by nenglu Tue Apr 25 01:46:51 2023
+[27]PETSC ERROR: Configure options --with-debugging=0 --COPTFLAGS="-g -O3" --CXXOPTFLAGS="-g -O3" --FOPTFLAGS="-g -O3" --prefix=/opt/cluster/software/petsc/petsc-3.17.1_openmpi --with-petsc4py=1 --with-zlib=1 --download-fblaslapack=1 --download-hdf5=1 --download-mumps=1 --download-parmetis=1 --download-metis=1 --download-superlu=1 --download-hypre=1 --download-scalapack=1 --download-superlu_dist=1 --download-ctetgen --download-eigen --download-triangle --useThreads=0 --download-superlu=1 --with-shared-libraries --with-cxx-dialect=C++11 --with-make-np=8
+[27]PETSC ERROR: #1 MatSetValues_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:478
+[27]PETSC ERROR: #2 MatSetValues() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:1343
+[27]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[27]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[27]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[27]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[27]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[27]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[27]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[27]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[34]PETSC ERROR: #3 MatDiagonalSet_Default() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:315
+[34]PETSC ERROR: #4 MatDiagonalSet_SeqAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/seq/aij.c:205
+[34]PETSC ERROR: #5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[34]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[34]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[34]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[34]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[34]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[34]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+#5 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[35]PETSC ERROR: #6 MatDiagonalSet_MPIAIJ() at /tmp/petsc-3.17.1/src/mat/impls/aij/mpi/mpiaij.c:164
+[35]PETSC ERROR: #7 MatDiagonalSet() at /tmp/petsc-3.17.1/src/mat/utils/axpy.c:355
+[35]PETSC ERROR: #8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[35]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[35]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[35]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+#8 MatGalerkin() at /tmp/petsc-3.17.1/src/mat/interface/matrix.c:10358
+[28]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[28]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[28]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+[32]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[32]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[32]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+[33]PETSC ERROR: #9 PCSetUp_MG() at /tmp/petsc-3.17.1/src/ksp/pc/impls/mg/mg.c:1056
+[33]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[33]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+[29]PETSC ERROR: #10 PCSetUp() at /tmp/petsc-3.17.1/src/ksp/pc/interface/precon.c:990
+[29]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+[31]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+#11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+[27]PETSC ERROR: #11 KSPSetUp() at /tmp/petsc-3.17.1/src/ksp/ksp/interface/itfunc.c:407
+An uncaught exception was encountered on processor 34.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 31.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 29.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 35.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 33.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 27.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 32.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 30.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+An uncaught exception was encountered on processor 28.
+Traceback (most recent call last):
+  File "/home/nenglu/FreeSurf.py", line 363, in <module>
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    Model.run_for(5.0 * u.megayears, checkpoint_interval=checkpoint_interval,dt= dt)
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1675, in run_for
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solve()
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/UWGeodynamics/_model.py", line 1514, in solve
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+    self.solver.solve(
+  File "/opt/cluster/software/underworld/2.13.0/lib/python3.10/site-packages/underworld/systems/_bsscr.py", line 450, in solve
+    libUnderworld.StgFEM.SystemLinearEquations_ExecuteSolver(self._stokesSLE._cself, None)
+RuntimeError: Error encountered. Full restart recommended as exception safety not guaranteed. Error message:
+An error was encountered during the PETSc solver setup. You should refer to the PETSc
+error message for details. Note that if you are running within Jupyter, this error
+message will only be visible in the console window.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 29 in communicator MPI COMMUNICATOR 3 DUP FROM 0
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[node08:1353779] 8 more processes have sent help message help-mpi-api.txt / mpi-abort
+[node08:1353779] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
